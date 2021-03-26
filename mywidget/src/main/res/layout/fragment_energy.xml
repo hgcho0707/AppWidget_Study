@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EnergyFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_energy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_tabbar_54dp"
+        android:background="@color/white"
+        android:lineSpacingExtra="8sp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="50dp"
+        app:tabPaddingStart="50dp"
+        app:tabTextColor="#a1a1a1"
+        app:tabIndicator="@drawable/tab_selector"
+        app:tabIndicatorColor="@color/color_energytab_text"
+        app:tabSelectedTextColor="@color/color_energytab_text"
+        app:tabTextAppearance="@style/energy_tab_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

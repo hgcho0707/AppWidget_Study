@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_carbon_recylcer_item_title"
+        android:layout_width="@dimen/width_recycler_item_70dp"
+        android:layout_height="@dimen/height_recycler_item_30dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_474747_100"
+        android:layout_marginTop="24.5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/recycler_title_text"/>
+
+    <TextView
+        android:id="@+id/tv_carbon_recylcer_item_usage"
+        android:layout_width="@dimen/width_recycler_item_70dp"
+        android:layout_height="@dimen/height_recycler_item_30dp"
+        android:layout_marginTop="@dimen/margin_recycler_first_item_top_57.5dp"
+        android:textStyle="normal"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_474747_100"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_carbon_recylcer_item_carbon"
+        android:layout_width="@dimen/width_recycler_item_70dp"
+        android:layout_height="@dimen/height_recycler_item_30dp"
+        android:layout_marginTop="@dimen/margin_recycler_second_item_top_57.5dp"
+        android:textStyle="normal"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_474747_100"
+        android:gravity="center_vertical|center_horizontal"/>
+</LinearLayout>

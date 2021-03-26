@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_electro_left_bg"
+        android:layout_width="@dimen/width_energy_image_content_460dp"
+        android:layout_height="@dimen/height_energy_image_content_404dp"
+        android:layout_margin="@dimen/margin_energy_content_16dp"
+        android:background="@drawable/comm_contents_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_usage_graph_view"
+        android:layout_width="@dimen/width_energy_image_content_460dp"
+        android:layout_height="@dimen/height_energy_image_content_404dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_electro_left_bg"
+        app:layout_constraintEnd_toEndOf="@+id/view_electro_left_bg"
+        app:layout_constraintStart_toStartOf="@+id/view_electro_left_bg"
+        app:layout_constraintTop_toTopOf="@+id/view_electro_left_bg" />
+
+    <View
+        android:id="@+id/view_electro_right_bg"
+        android:layout_width="@dimen/width_energy_text_content_516dp"
+        android:layout_height="@dimen/height_energy_text_content_404dp"
+        android:layout_margin="@dimen/margin_energy_content_16dp"
+        android:background="@drawable/comm_contents_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_electro_left_bg"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_electro_month_accum_usage"
+            style="@style/main_text_style"
+            android:layout_width="150dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="@dimen/margin_energy_month_usage_text_start_30dp"
+            android:layout_marginTop="@dimen/margin_energy_month_usage_text_top_30dp"
+            android:text="@string/energy_month_usage"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toTopOf="@+id/view_electro_right_bg" />
+
+        <TextView
+            android:id="@+id/tv_electro_month_accum_usage_data"
+            style="@style/energy_text_style"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="16dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/energy_defalut_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_month_accum_usage"
+            app:layout_constraintTop_toTopOf="@+id/view_electro_right_bg" />
+
+        <TextView
+            android:id="@+id/tv_electro_accum_usage_fee"
+            style="@style/main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_energy_month_usage_text_start_30dp"
+            android:layout_marginTop="@dimen/margin_energy_usage_fee_text_top_70dp"
+            android:text="@string/energy_usage_fee"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_electro_month_accum_usage" />
+
+        <TextView
+            android:id="@+id/tv_electro_accum_usage_fee_data"
+            style="@style/energy_text_style"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="41dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/energy_defalut_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_accum_usage_fee"
+            app:layout_constraintTop_toBottomOf="@+id/tv_electro_month_accum_usage_data" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:src="@drawable/ic_noti"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_energy_hint_text_top_4dp"
+            android:layout_marginEnd="@dimen/margin_energy_hint_text_end_30dp"
+            android:text="@string/energy_usage_fee_alert"
+            android:textColor="@color/color_energy_hint_text"
+            android:textSize="@dimen/size_energy_hint_text_16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_electro_accum_usage_fee_data" />
+
+        <TextView
+            android:id="@+id/tv_electro_usage_rate"
+            style="@style/main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_energy_month_usage_text_start_30dp"
+            android:layout_marginTop="@dimen/margin_energy_usage_rate_text_top_64dp"
+            android:text="@string/energy_usage_rate"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_electro_accum_usage_fee" />
+
+        <TextView
+            android:id="@+id/tv_energy_usage_rate_data"
+            style="@style/energy_text_style"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="65dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/energy_defalut_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_usage_rate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_electro_accum_usage_fee_data" />
+
+        <TextView
+            android:id="@+id/tv_electro_target_value"
+            style="@style/main_text_style"
+            android:layout_width="61dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="@dimen/margin_energy_month_usage_text_start_30dp"
+            android:layout_marginBottom="37dp"
+            android:gravity="center"
+            android:text="@string/energy_target_value"
+            app:layout_constraintBottom_toBottomOf="@+id/view_electro_right_bg"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg" />
+
+        <TextView
+            android:id="@+id/tv_energy_target_value_data"
+            style="@style/energy_text_style"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="21dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/energy_defalut_data"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_electro_target_value"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_target_value"
+            app:layout_constraintTop_toTopOf="@+id/tv_electro_target_value" />
+
+        <TextView
+            android:id="@+id/tv_electro_usage_w"
+            style="@style/energy_unit_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/energy_watt"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_electro_month_accum_usage_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_month_accum_usage_data"
+            app:layout_constraintTop_toTopOf="@+id/tv_electro_month_accum_usage_data" />
+
+        <TextView
+            android:id="@+id/tv_electro_fee_won"
+            style="@style/energy_unit_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/energy_won"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_electro_accum_usage_fee_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_accum_usage_fee_data"
+            app:layout_constraintTop_toTopOf="@+id/tv_electro_accum_usage_fee_data" />
+
+        <TextView
+            android:id="@+id/tv_electro_rate_per"
+            style="@style/energy_unit_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/energy_percent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_energy_usage_rate_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_electro_accum_usage_fee_data"
+            app:layout_constraintTop_toTopOf="@+id/tv_energy_usage_rate_data" />
+
+        <TextView
+            android:id="@+id/tv_electro_target_w"
+            style="@style/energy_unit_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/energy_watt"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_energy_target_value_data"
+            app:layout_constraintStart_toEndOf="@+id/tv_energy_target_value_data"
+            app:layout_constraintTop_toTopOf="@+id/tv_energy_target_value_data" />
+
+        <Button
+            android:id="@+id/btn_electro_setting"
+            android:layout_width="@dimen/widget_main_view_button_size_width"
+            android:layout_height="@dimen/height_energy_setting_button_45dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_border"
+            android:text="@string/energy_setting"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_energy_unit_text_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_electro_right_bg"
+            app:layout_constraintEnd_toEndOf="@+id/view_electro_right_bg" />
+
+        <ProgressBar
+            android:id="@+id/pb_electro_usage_rate"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/width_energy_progrssbar_456dp"
+            android:layout_height="@dimen/height_energy_progrssbar_15dp"
+            android:layout_marginTop="17dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/info_ic_bargraph_bg"
+            app:layout_constraintEnd_toEndOf="@+id/view_electro_right_bg"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_energy_usage_rate_data" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:src="@drawable/ic_info_ic_graph_needle"
+            app:layout_constraintEnd_toEndOf="@+id/pb_electro_usage_rate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_energy_usage_rate_data" />
+
+        <View
+            android:id="@+id/view_electro_division_top"
+            android:layout_width="@dimen/width_energy_line_456dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_energy_line_view_top_94dp"
+            android:background="@color/color_dddddd_100"
+            app:layout_constraintEnd_toEndOf="@+id/view_electro_right_bg"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toTopOf="@+id/view_electro_right_bg" />
+
+        <View
+            android:id="@+id/view_electro_division_bottom"
+            android:layout_width="@dimen/width_energy_line_456dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="116dp"
+            android:background="@color/color_dddddd_100"
+            app:layout_constraintEnd_toEndOf="@+id/view_electro_right_bg"
+            app:layout_constraintStart_toStartOf="@+id/view_electro_right_bg"
+            app:layout_constraintTop_toBottomOf="@+id/view_electro_division_top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_carbon_content_992dp"
+    android:layout_height="@dimen/height_carbon_content_458dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/white"
+    tools:context=".view.CarbonFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_carbon_cloud"
+        android:layout_width="@dimen/width_carbon_co2_image_158dp"
+        android:layout_height="@dimen/height_carbon_co2_image_134dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/info_ic_co_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_carbon_co2_emissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="58dp"
+        android:text="324kg"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_carbon_cloud"
+        app:layout_constraintEnd_toEndOf="@+id/iv_carbon_cloud"
+        app:layout_constraintStart_toStartOf="@+id/iv_carbon_cloud"
+        app:layout_constraintTop_toTopOf="@+id/iv_carbon_cloud" />
+
+    <TextView
+        android:id="@+id/tv_carbon_co2_emissions_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_carbon_bottom_text_start_28dp"
+        android:text="@string/carbon_co2_emissions"
+        android:textColor="@color/color_appbar_bg"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_carbon_cloud"
+        app:layout_constraintStart_toEndOf="@+id/iv_carbon_cloud"
+        app:layout_constraintTop_toTopOf="@+id/iv_carbon_cloud" />
+
+    <ImageView
+        android:id="@+id/iv_carbon_tree"
+        android:layout_width="@dimen/width_carbon_tree_image_136dp"
+        android:layout_height="@dimen/height_carbon_tree_image_134dp"
+        android:layout_marginStart="544dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/info_ic_tree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_carbon_tree_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3그루"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_carbon_tree"
+        app:layout_constraintEnd_toEndOf="@+id/iv_carbon_tree"
+        app:layout_constraintStart_toStartOf="@+id/iv_carbon_tree"
+        app:layout_constraintTop_toTopOf="@+id/iv_carbon_tree" />
+
+    <TextView
+        android:id="@+id/tv_carbon_tree_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_carbon_bottom_text_start_28dp"
+        android:text="@string/carbon_tree"
+        android:textColor="@color/color_carbon_tree_text"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_carbon_tree"
+        app:layout_constraintStart_toEndOf="@+id/iv_carbon_tree"
+        app:layout_constraintTop_toTopOf="@+id/iv_carbon_tree" />
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="79dp"
+        android:background="@color/color_carbon_top_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_mid"
+        android:layout_width="@dimen/width_carbon_line_932dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/color_carbon_common_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="@dimen/width_carbon_line_932dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="94dp"
+        android:background="@color/color_carbon_common_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_mid" />
+
+    <TextView
+        android:id="@+id/tv_carbon_division_title"
+        android:layout_width="@dimen/width_carbon_text_140dp"
+        android:layout_height="@dimen/height_carbon_text_30dp"
+        android:layout_marginStart="60dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_energy_maintext"
+        android:text="@string/carbon_division"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/view_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_carbon_usage_tilte"
+        android:layout_width="@dimen/width_carbon_text_140dp"
+        android:layout_height="@dimen/height_carbon_text_30dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/carbon_usage_amount"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_energy_maintext"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view_mid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+    <TextView
+        android:id="@+id/tv_carbon_co2_emissions_title"
+        android:layout_width="@dimen/width_carbon_text_140dp"
+        android:layout_height="@dimen/height_carbon_text_30dp"
+        android:layout_marginStart="@dimen/margin_carbon_main_text_start_60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/carbon_co2"
+        android:textSize="@dimen/size_energy_unit_text_20sp"
+        android:textColor="@color/color_energy_maintext"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_mid" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="@dimen/width_recycler_content_740dp"
+        android:layout_height="@dimen/height_recycler_content_268dp"
+        android:layout_marginStart="52dp"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_carbon_division_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

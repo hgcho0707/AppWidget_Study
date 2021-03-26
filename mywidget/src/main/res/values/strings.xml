@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">My Widget</string>
+
+    <string name="main_title">HEMS</string>
+
+    <string name="today_date">현재 날짜 : </string>
+    <string name="today_time">현재 시간 : </string>
+    <string name="today_temp">현재 온도 : </string>
+
+    <string name="energy_electric">전기</string>
+    <string name="energy_gas">가스</string>
+    <string name="energy_water">수도</string>
+
+    <string name="main_energy">에너지미터링</string>
+    <string name="main_average">평균사용량</string>
+    <string name="main_carbon">탄소배출량</string>
+    
+    <string name="energy_month_usage">당월 누적 사용량</string>
+    <string name="energy_usage_fee">누적 사용 요금</string>
+    <string name="energy_usage_rate">목표대비 사용률</string>
+    <string name="energy_target_value">목표값</string>
+    <string name="energy_usage_fee_alert">실제 요금과 차이가 날 수 있습니다.</string>
+    
+    <string name="energy_watt">W</string>
+    <string name="energy_won">원</string>
+    <string name="energy_percent">%</string>
+    <string name="energy_setting">설정</string>
+    <string name="energy_defalut_data">780</string>
+
+    <string name="carbon_division">구분</string>
+    <string name="carbon_usage_amount">사용량(kWh)</string>
+    <string name="carbon_co2">탄소배출량(kg)</string>
+    <string name="carbon_co2_emissions">우리 가족 이번달 \n이산화탄소(CO2)배출량</string>
+    <string name="carbon_tree">배출한 CO2 흡수를 위해 \n심어야 하는 소나무</string>
+
+    <string name="recycler_title_text">항목</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+    <!-- resource -->
+    <string name="energy_used">Energy Used</string>
+    <string name="average_usage">Average Used</string>
+    <string name="co2_emissions">CO2 Emissions</string>
+    <string name="target_value">Target</string>
+    <string name="weather">Weather</string>
+    <string name="setting">Setting</string>
+    <string name="usage">usage</string>
+
+    <string name="current_usage">%s Current Usage</string>
+    <string name="target_usage">Target Usage</string>
+    <string name="same_area_average">Same Area Average</string>
+    <string name="last_year_same_month">Last Year</string>
+
+    <string name="division">Division</string>
+    <string name="same_area_usage">Same Area Usage</string>
+    <string name="my_home_usage">My Home Usage</string>
+    <string name="same_area_emissions">Same Area Emissions</string>
+    <string name="my_home_emissions">My Home Emissions</string>
+    <string name="my_home_fee">My Home Fee</string>
+    <string name="fee">fee</string>
+    <string name="target_setting">Target Setting</string>
+    <string name="rank">Rank</string>
+    <string name="date">period Start/End</string>
+
+    <string name="electric">Electric</string>
+    <string name="gas">Gas</string>
+    <string name="water">Water</string>
+    <string name="heating">Heating</string>
+    <string name="hot_water">Hotwater</string>
+
+    <string name="date_format">yyyy.MM.dd</string>
+    <string name="month_format">MM</string>
+    <string name="year_month_format">yyyy. MM</string>
+    <string name="year_format">yyyy</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="goal_value_error_msg">Value was not entered.</string>
+    <string name="goal_value_valid_error_msg">Value was not valid.</string>
+
+    <string name="percent" translatable="false">%d%%</string>
+    <string name="period_format" translatable="false">%s\n%s</string>
+
+    <string name="num_1" translatable="false">1</string>
+    <string name="num_2" translatable="false">2</string>
+    <string name="num_3" translatable="false">3</string>
+    <string name="num_4" translatable="false">4</string>
+    <string name="num_5" translatable="false">5</string>
+    <string name="num_6" translatable="false">6</string>
+    <string name="num_7" translatable="false">7</string>
+    <string name="num_8" translatable="false">8</string>
+    <string name="num_9" translatable="false">9</string>
+    <string name="num_0" translatable="false">0</string>
+    <string name="dot" translatable="false">.</string>
+
+    <string name="network_error_msg">No connection to server.\nTry again?.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="error_message">The connection to the server failed.</string>
+    <string name="init_message">Data Load Failed.</string>
+    <string name="loading_message">loading...</string>
+
+    <string name="same_area_type">Same area type</string>
+    <string name="text_average">Average</string>
+    <string name="text_month">M mon.</string>
+    <string name="validation_error_msg">Data validation error.</string>
+
+    <string name="this_usage">Cumulative usage</string>
+    <string name="this_pee">Cumulative usage fee</string>
+    <string name="this_pee_noti">It may differ from actual rates.</string>
+    <string name="this_pee_unit">won</string>
+    <string name="this_usage_unit" translatable="false">W</string>
+
+    <string name="co2_notice_msg">CO2 emissions this month</string>
+    <string name="co2_tree_notice_msg">Pine trees to be planted for CO2 absorption</string>
+    <string name="co2_tree">Tree</string>
+    <string name="this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="last2_month">Last Month</string>
+    <string name="real_time_data">Real Time Usage</string>
+    <string name="real_time_data_ko">실시간사용량</string>
+
+    <string name="device_not_found">Device not found.</string>
+    <string name="value_input">Input</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--study color data-->
+    <color name="color_appbar_bg">@color/color_23a696_100</color>
+    <color name="color_basic_bg">@color/color_eeeeee_100</color>
+    <color name="color_tab_text">@color/color_dddddd_100</color>
+    <color name="color_energytab_text">@color/color_23a696_100</color>
+    <color name="color_energy_hint_text">@color/color_c5c5c5_100</color>
+    <color name="color_tab_indicator_bg">@color/color_1a8779_100</color>
+    <color name="color_tab_shadow">@color/color_474747_50</color>
+    <color name="color_progressbar_bg">@color/color_eeeeee_100</color>
+    <color name="color_energy_maintext">@color/color_474747_100</color>
+    <color name="color_carbon_tree_text">@color/color_acd933_100</color>
+    <color name="color_carbon_top_line">@color/color_c5c5c5_100</color>
+    <color name="color_carbon_common_line">@color/color_e5e5e5_100</color>
+
+    <!--color List-->
+    <color name="color_23a696_100">#ff23a696</color>
+    <color name="color_1a8779_100">#ff1a8779</color>
+    <color name="color_dddddd_100">#ffdddddd</color>
+    <color name="color_eeeeee_100">#ffeeeeee</color>
+    <color name="color_e5e5e5_100">#ffe5e5e5</color>
+    <color name="color_c5c5c5_100">#ffc5c5c5</color>
+    <color name="color_474747_100">#ff474747</color>
+    <color name="color_474747_50">#80474747</color>
+    <color name="color_acd933_100">#ffacd933</color>
+
+
+    <!-- resource-->
+    <color name="color_unselected_tab_text">#E4E4E4</color>
+
+    <!-- Main BG Color -->
+    <color name="color_background_start">#ddd5da</color>
+    <color name="color_background_end">#ccc4c9</color>
+
+    <color name="color_legend_background">#E5E5E5</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_op50">#80ffffff</color>
+    <color name="color_bg">#eeeeee</color>
+
+    <color name="color_tab_text_shadow">#bb000000</color>
+
+    <color name="color_tab_bg">#44000000</color>
+    <color name="color_tab_bg_transparent">#00000000</color>
+
+    <color name="color_goal_text">#23A696</color>
+    <color name="color_tree_notice_text">#8FB726</color>
+    <color name="color_default_text">#474747</color>
+
+    <color name="color_notice_text">#c5c5c5</color>
+
+    <color name="color_axis_line_white">#66FFFFFF</color>
+
+    <color name="color_circle_graph_bg">#23a696</color>
+    <color name="color_bar_graph_bg">#acd933</color>
+    <color name="color_2bar_graph_bg">#e2e2e2</color>
+
+    <color name="color_red">#FF0000</color>
+
+    <color name="color_over_value_text">#F26120</color>
+
+    <drawable name="bg_clear">#00000000</drawable>
+
+    <drawable name="item_bg_normal">#FFFFFF</drawable>
+    <drawable name="item_bg_press">#72D1C6</drawable>
+
+    <drawable name="spinner_item_bg_normal">#FFFFFF</drawable>
+    <drawable name="spinner_item_bg_press">#EDFFBD</drawable>
+
+    <color name="color_axis_line_white_trance">#00FFFFFF</color>
+
+    <color name="color_title_bar_bg">#23A696</color>
+    <color name="widget_click_background">#26FFFFFF</color>
+
+    <color name="color_energy_info_text_default">#999999</color>
+    <color name="color_energy_info_text_focus">#ffffff</color>
+
+    <color name="color_progress_background_large">#666666</color>
+    <color name="color_progress_background_small">#666666</color>
+
+    <color name="color_progress_energy">#ff36c3ff</color>
+    <color name="color_axis_text">#23a696</color>
+    <color name="color_axis_y_text">#3c3c3c</color>
+
+    <color name="color_black">#232222</color>
+    <color name="color_black_30_data">#4d232222</color>
+    <color name="color_black_50_data">#80232222</color>
+</resources>
